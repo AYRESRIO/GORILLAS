@@ -32,11 +32,40 @@ body {
   background-color:var(--gorillas-color-bg-primary);
 }
 
+main {
+  padding: 0 20px;
+}
+
+/*-----------------------------------------------------------------------------*/
+/*Generics Styles*/
+
+.gorillas-container {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.gorillas-mt20 {
+  margin-top: 20px;
+}
+.gorillas-mb20 {
+  margin-bottom: 20px;
+}
+
+.gorillas-ml20 {
+  margin-left: 20px;
+}
+
+
+/*-----------------------------------------------------------------------------*/
+/*Header Styles*/
+
 header {
   background-color: var(--gorillas-color-bg-secondary);
   height: 70px;
   display: flex;
   align-items: center;
+  padding: 0 20px;
 }
 
 nav {
@@ -46,29 +75,46 @@ nav {
   align-items: center;
 }
 
-.container {
-  width: 100%;
-  max-width: 960px;
-  margin: 0 auto;
+nav h1 {
+  font-size: 24px;
+
 }
 
-.card {
+nav a {
+  font-size: 17px;
+  font-weight: 700;
+}
+
+/*-----------------------------------------------------------------------------*/
+/*Card Styles*/
+
+.gorillas-card {
   background-color:var(--gorillas-color-card-bg) ;
   border-radius: 5px;
   border: 1px solid var(--gorillas-color-card-border);
 }
 
-.line-bottom {
+/*-----------------------------------------------------------------------------*/
+/*Button Styles*/
+
+.gorillas-line-bottom {
   border-bottom: 1px solid var(--gorillas-color-card-border);
 }
 
-.btn-page-container {
-  width: 220px;
+.gorillas-btn-page-container {
+  width: 100%;
   display: grid;
   grid-gap: 20px;
 }
 
-.btn {
+@media (min-width:576px) {
+
+  .gorillas-btn-page-container {
+    width: 220px;
+  }
+}
+
+.gorillas-btn {
   border-radius: 5px;
   height: 42px;
   font-size: 16px;
@@ -77,23 +123,17 @@ nav {
   justify-content: center;
   align-items: center;
 }
-.btn-blue {
+.gorillas-btn-blue {
   background-color: var(--gorillas-color-btn-primary);
   color: var(--gorillas-color-btn-inverse) ;
+  cursor: pointer;
 }
 
-.btn-white {
+
+.gorillas-btn-white {
   background-color: var(--gorillas-color-btn-inverse);
   color: var(--gorillas-color-btn-primary);
   border: 1px solid var(--gorillas-color-btn-primary);
-}
-.mt20 {
-  margin-top: 20px;
-}
-.mb20 {
-  margin-bottom: 20px;
+  cursor: pointer;
 }
 
-.ml20 {
-  margin-left: 20px;
-}
