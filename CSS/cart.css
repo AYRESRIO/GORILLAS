@@ -6,8 +6,8 @@
 
 .gorillas-cart-item-container{
     display: flex;
-    justify-content: space-between;
     padding: 20px;
+    flex-direction: column;
 }
 
 .gorillas-cart-item-container img{
@@ -24,7 +24,6 @@
     font-size: 12Spx;
     font-weight: 700;
     color: var(--gorillas-color-font-secondary);
-
 
 }
 
@@ -46,7 +45,7 @@
 }
 
 .gorillas-cart-item-description h3 {
-    font-size: 20px;
+    font-size: 15px;
 }
 
 .gorillas-cart-item-quantity-btn {
@@ -55,13 +54,30 @@
 }
 
 .gorillas-cart-total-container {
-    padding: 0 20px 10px 20px;
+    padding: 10px 20px;
 }
 
 .gorillas-cart-total-container h3 {
-    text-align: right;
+    text-align: left;
     font-size: 20px;
     color: var(--gorillas-color-font-secondary);
+}
 
+@media(min-width:576px) {
+    .gorillas-cart-item-container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
 
+    .gorillas-cart-item-description  h3{
+        font-size: 20px;
+    }
+
+    .gorillas-cart-total-container h3 {
+        text-align: right;
+    }
+
+    .gorillas-cart-item-right {
+        padding-top: 10px;
+    }
 }
