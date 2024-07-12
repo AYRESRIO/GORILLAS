@@ -14,6 +14,7 @@
   --gorillas-color-font-primary:#636363;
   --gorillas-color-font-secondary:#0caf1d;
   --gorillas-color-font-tertiary: #fff;
+  --gorillas-color-font-placeholder: #d9d9d9;
 }
 * {
   box-sizing: border-box;
@@ -29,7 +30,7 @@ a:hover {
 
 html,
 body {
-  background-color:var(--gorillas-color-bg-primary);
+  background-color:var(--gorillas-color-card-bg);
 }
 
 main {
@@ -45,11 +46,13 @@ main {
   margin: 0 auto;
 }
 
-.gorillas-mt20 {
-  margin-top: 20px;
-}
 .gorillas-mb20 {
   margin-bottom: 20px;
+}
+
+
+.gorillas-mt20 {
+  margin-top: 20px;
 }
 
 .gorillas-ml20 {
@@ -77,7 +80,6 @@ nav {
 
 nav h1 {
   font-size: 24px;
-
 }
 
 nav a {
@@ -147,5 +149,53 @@ nav a {
   font-weight: 700;
   cursor: pointer;
 
+}
+
+/*-----------------------------------------------------------------------------*/
+/*Search bar Styles*/
+
+.gorillas-search-bar{
+  height: 40px;
+  display: flex;
+  color: var(--gorillas-color-font-primary);
+}
+
+.gorillas-search-bar button, .gorillas-search-bar input{
+  border: 1px solid var(--gorillas-color-card-border);
+}
+
+.gorillas-search-bar input{
+  width: calc(100% - 80px);
+  border-left: none;
+  border-right: none;
+  padding: 0 10px;
+  font-size: 16px;
+  color: var(--gorillas-color-font-primary);
+
+}
+
+.gorillas-search-bar input:focus{
+  outline: none;
+}
+
+.gorillas-search-bar input::placeholder{
+  color: var(--gorillas-color-font-placeholder);
+}
+
+
+
+.gorillas-search-bar button{
+  width: 40px;
+  color: var(--gorillas-color-font-primary);
+}
+
+.gorillas-search-bar button[type="submit"]{
+  border-right: none;
+  border-radius: 4px 0 0 4px;
+}
+
+.gorillas-search-bar button[type="reset"]{
+  border-left: none;
+  border-radius: 0 4px 4px 0;
 }
 
