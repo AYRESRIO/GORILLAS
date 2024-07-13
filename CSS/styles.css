@@ -89,6 +89,17 @@ nav a {
   font-weight: 700;
 }
 
+.gorillas-logged-user{
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+.gorillas-logged-user p{
+  font-size: 12px;
+}
+
+
 /*-----------------------------------------------------------------------------*/
 /*Card Styles*/
 
