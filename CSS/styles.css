@@ -265,6 +265,24 @@ nav a {
   padding-left: 4px;
 }
 
+.gorillas-select:invalid {
+  color: var(--gorillas-color-font-placeholder);
+}
+
+.gorillas-select option[disabled]{
+  display: none;
+}
+
+.gorillas-select option{
+  color: var(--gorillas-color-font-primary);
+}
+
+.gorillas-textarea{
+  resize: none;
+  height: 128px;
+  padding-top: 10px;
+}
+
 @media(min-width:576px){
   .gorillas-form h2{
     font-size: 24px;

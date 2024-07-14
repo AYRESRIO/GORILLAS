@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GORILLAS</title>
+    <link rel="stylesheet" href="CSS/product-form.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="gorillas-container">
+        <h1>GORILLAS</h1>
+        <div class="gorillas-logged-user">
+          <p>Marcio Ayres</p>
+          <a href="#">Sair</a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section id="product-form-section" class="gorillas-container">
+        <div class="gorillas-product-form-container">
+          <form class="gorillas-card gorillas-form">
+            <h2>Dados do produto</h2>
+            <div class="gorillas-form-controls-container">
+              <div>
+                <input class="gorillas-form-control" type="text" placeholder="Nome" >
+              </div>
+              <div>
+                <input class="gorillas-form-control" type="text" placeholder="Preço" >
+              </div>
+              <div>
+                <input class="gorillas-form-control" type="text" placeholder="Imagem" >
+              </div>
+              <div>
+                <select class="gorillas-form-control gorillas-select" required>
+                  <option value="" disabled selected>Categorias</option>
+                  <option value="1">Valor 1</option>
+                  <option value="2">Valor 2</option>
+                </select>
+              </div>
+              <div>
+                <textarea class="gorillas-form-control gorillas-textarea" placeholder="Descrição"></textarea>
+              </div>
+            </div>
+            <div class="gorillas-product-form-buttons">
+              <button type="reset" class="gorillas-btn gorillas-btn-white">
+                Cancelar
+              </button>
+             <button type="submit" class="gorillas-btn gorillas-btn-blue">
+                Salvar
+              </button>
+            </div>
+           
+          </form>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
