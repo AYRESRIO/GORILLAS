@@ -15,7 +15,12 @@
     width: 100%;
     display: grid;
     grid-gap: 20px;
-    grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+}
+
+@media(min-width:290px){
+    .gorillas-product-form-buttons{
+        grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+    }
 }
 
 @media (min-width: 576px){

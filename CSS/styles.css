@@ -61,6 +61,23 @@ main {
   margin-left: 20px;
 }
 
+.gorillas-section-title{
+  text-align: center;
+  color: var(--gorillas-color-font-primary);
+  font-size: 16px;
+}
+
+.gorillas-txt-left{
+  text-align: left;
+}
+
+@media(min-width:576px){
+  .gorillas-section-title{
+    text-align: left;
+    font-size: 24px;
+  }
+}
+
 
 /*-----------------------------------------------------------------------------*/
 /*Header Styles*/
@@ -213,7 +230,7 @@ nav a {
 }
 
 /*-----------------------------------------------------------------------------*/
-/*form Styles*/
+/*Form Styles*/
 
 .gorillas-form{
   display: flex;
@@ -286,6 +303,91 @@ nav a {
 @media(min-width:576px){
   .gorillas-form h2{
     font-size: 24px;
+  }
+}
+
+/*-----------------------------------------------------------------------------*/
+/*Table Styles*/
+
+.gorillas-table{
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+.gorillas-table thead{
+  background-color: var(--gorillas-color-card-bg);
+  color: var(--gorillas-color-font-primary);
+  height: 55px;
+  font-size: 14px;
+}
+
+.gorillas-table tbody{
+  background-color: var(--gorillas-color-card-bg);
+  color: var(--gorillas-color-font-primary);
+  font-size: 12px;
+  text-align: center;
+}
+
+.gorillas-table tbody tr{
+  border-top: 1px solid var(--gorillas-color-card-border);
+  height: 80px;
+}
+
+.gorillas-table th:nth-child(2){
+  border-top-left-radius: 10px;
+}
+
+.gorillas-table th:last-child{
+  border-top-right-radius: 10px;
+}
+
+.gorillas-table td:nth-child(2){
+  padding-left: 10px;
+  padding-right: 5px;
+}
+
+.gorillas-table td:last-child(){
+  padding-right: 5px;
+}
+
+.gorillas-tb576{
+  display: none;
+}
+
+.gorillas-tb768{
+  display: none;
+}
+
+@media(min-width: 576px){
+  .gorillas-tb576{
+    display: table-cell;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .gorillas-table th:nth-child(1){
+    padding-left: 20px;
+    border-top-left-radius: 10px;
+  }
+
+  .gorillas-table th:nth-child(2){
+    border-top-left-radius: 0;
+  }
+  .gorillas-table td:nth-child(1){
+    padding-left: 20px;
+  }
+}
+
+@media(min-width: 768px){
+  .gorillas-tb768{
+    display: table-cell;
+  }
+}
+
+@media(min-width:992px){
+  .gorillas-table tbody{
+    font-size: 16px;
   }
 }
 
