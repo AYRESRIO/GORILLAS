@@ -4,6 +4,7 @@
   --gorillas-color-bg-primary: #e8e8e8;
   --gorillas-color-bg-secondary: #ffe500;
   --gorillas-color-bg-tertiary:  #636363;
+  --gorillas-color-bg-quaternary: #0caf1d;
 
   --gorillas-color-card-bg: #fff;
   --gorillas-color-card-border: #d9d9d9;
@@ -82,27 +83,65 @@ main {
 /*-----------------------------------------------------------------------------*/
 /*Header Styles*/
 
-header {
-  background-color: var(--gorillas-color-bg-secondary);
+header{
   height: 70px;
   display: flex;
   align-items: center;
   padding: 0 20px;
 }
 
-nav {
+.gorillas-header-client{
+  background-color: var(--gorillas-color-bg-secondary);
   color: var(--gorillas-color-font-primary);
+}
+
+.gorillas-header-admin{
+  background-color:var(--gorillas-color-bg-quaternary);
+  color: var(--gorillas-color-font-tertiary);
+}
+
+nav{
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-nav h1 {
-  font-size: 24px;
+nav h1{
+  font-size: 16px;
+  margin-right: 20px;
 }
 
-nav a {
+nav a{
   font-size: 17px;
+  font-weight: 700;
+}
+
+.gorillas-navbar-right{
+  display: flex;
+  align-items: center;
+}
+
+.gorillas-menu-items-container{
+  display: flex;
+}
+
+.gorillas-menu-items-container img{
+  width: 20px;
+  height: 20px;
+}
+
+.gorillas-menu-item{
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+}
+.gorillas-menu-item p{
+  margin-left: 8px;
+  display: none;
+  font-size: 14px;
+}
+
+.gorillas-menu-item-active{
   font-weight: 700;
 }
 
@@ -114,6 +153,15 @@ nav a {
 
 .gorillas-logged-user p{
   font-size: 12px;
+}
+
+@media(min-width:576px){
+  nav h1{
+    font-size: 24px;
+  }
+  .gorillas-menu-item p{
+    display:unset;
+   }
 }
 
 
